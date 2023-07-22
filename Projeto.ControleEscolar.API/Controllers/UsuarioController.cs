@@ -9,7 +9,6 @@ namespace Projeto.ControleEscolar.API.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]
-    [Authorize]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioApplicationService _service;

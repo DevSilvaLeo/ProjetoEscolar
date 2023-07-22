@@ -29,6 +29,8 @@ namespace Projeto.ControleEscolar.Infra.SqlServer.Contexts
             modelBuilder.ApplyConfiguration(new ProfessorMap());
             modelBuilder.ApplyConfiguration(new TurmaMap());
             modelBuilder.ApplyConfiguration(new DisciplinaMap());
+            modelBuilder.ApplyConfiguration(new MensalidadeMap());
+            modelBuilder.ApplyConfiguration(new AvaliacaoMap());
         }
 
         public DbSet<Usuario> Usuario { get; set; }
@@ -36,5 +38,7 @@ namespace Projeto.ControleEscolar.Infra.SqlServer.Contexts
         public DbSet<Professor> Professor { get; set; }
         public DbSet<Turma> Turma { get; set; }
         public DbSet<Disciplina> Disciplina { get; set; }
+        public DbSet<Mensalidade> Mensalidade { get; set; }
+        public DbSet<Avaliacao> Avaliacao { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -53,6 +54,7 @@ namespace Projeto.ControleEscolar.API
             var conn = builder.Configuration.GetConnectionString("SistemaEscolar");
             builder.Services.AddDbContext<SqlServerContext>(options=>options.UseSqlServer(conn));
         }
+
         public static void AddJwtBearerSecurity(this WebApplicationBuilder builder)
         {
             builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection("JwtSettings"));
@@ -80,6 +82,7 @@ namespace Projeto.ControleEscolar.API
                         ValidateAudience = false,
                     };
                 });
+
         }
 
         public static void AddSwagger(this WebApplicationBuilder builder)
@@ -89,7 +92,7 @@ namespace Projeto.ControleEscolar.API
                 s.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "API - Sistema Escolas",
+                    Title = "API - Sistema Escolar",
                     Description = "API REST para administração escolar.",
                     Contact = new OpenApiContact { Name = "THE ONE SOFTWARE", Email = "contato@theonesoftware.com.br", Url = new Uri("http://www.theonesoftware.com.br") }
                 });
