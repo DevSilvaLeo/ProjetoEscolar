@@ -17,5 +17,7 @@ namespace Projeto.ControleEscolar.Domain.Interfaces.Repository
         ITurmaRepository TurmaRepository { get; }
         IDisciplinaRepository DisciplinaRepository { get; }
         IUsuarioRepository UsuarioRepository { get; }
+        IAvaliacaoRepository AvaliacaoRepository { get; }
+        IMensalidadeRepository MensalidadeRepository { get; }
     }
 }

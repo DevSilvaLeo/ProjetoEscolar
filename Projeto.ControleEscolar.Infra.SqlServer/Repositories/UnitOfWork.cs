@@ -48,5 +48,9 @@ namespace Projeto.ControleEscolar.Infra.SqlServer.Repositories
         public IUsuarioRepository UsuarioRepository => new UsuarioRepository(_context);
 
         public IDisciplinaRepository DisciplinaRepository => new DisciplinaRepository(_context);
+
+        public IAvaliacaoRepository AvaliacaoRepository => new AvaliacaoRepository(_context);
+
+        public IMensalidadeRepository MensalidadeRepository => new MensalidadeRepository(_context);
     }
 }
