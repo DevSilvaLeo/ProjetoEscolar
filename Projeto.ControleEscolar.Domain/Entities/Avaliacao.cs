@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FluentValidation.Results;
+using Projeto.ControleEscolar.Domain.Validations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +17,6 @@ namespace Projeto.ControleEscolar.Domain.Entities
         public decimal Media { get; set; }
         public Aluno? Aluno { get; set; }
         public Disciplina? Disciplina { get; set; }
+        public ValidationResult Validate => new AvaliacaoValidation().Validate(this);
     }
 }

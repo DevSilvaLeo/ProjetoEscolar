@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.ControleEscolar.API
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.ControleEscolar.Application", "Projeto.ControleEscolar.Application\Projeto.ControleEscolar.Application.csproj", "{F465B774-1D79-441F-AD6F-AA11727B51C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.ControleEscolar.Infra.Security", "Projeto.ControleEscolar.Infra.Security\Projeto.ControleEscolar.Infra.Security.csproj", "{CE7102D3-1ECD-4E2A-833D-A591143A3DDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.ControleEscolar.Infra.Security", "Projeto.ControleEscolar.Infra.Security\Projeto.ControleEscolar.Infra.Security.csproj", "{CE7102D3-1ECD-4E2A-833D-A591143A3DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.ControleEscolar.Infra.Email", "Projeto.ControleEscolar.Infra.Email\Projeto.ControleEscolar.Infra.Email.csproj", "{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{CE7102D3-1ECD-4E2A-833D-A591143A3DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE7102D3-1ECD-4E2A-833D-A591143A3DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE7102D3-1ECD-4E2A-833D-A591143A3DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{C0CC6657-16E6-4595-89B0-CEE9F0F1F48B} = {B9A8260A-7B56-4BC7-855F-C9D3DF914A54}
 		{F465B774-1D79-441F-AD6F-AA11727B51C3} = {8781581E-6D1B-4DC3-BA7B-68B8D957EAE0}
 		{CE7102D3-1ECD-4E2A-833D-A591143A3DDE} = {2617C815-A790-4884-972C-9089DBB68960}
+		{6BFA7E04-3AF4-41BD-B34B-AFF8CAB2EC9D} = {2617C815-A790-4884-972C-9089DBB68960}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5EFD773-902F-40D2-AEF2-0A6CF75FD90D}

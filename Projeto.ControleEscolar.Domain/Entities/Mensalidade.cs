@@ -1,4 +1,6 @@
-﻿using Projeto.ControleEscolar.Domain.Types;
+﻿using FluentValidation.Results;
+using Projeto.ControleEscolar.Domain.Types;
+using Projeto.ControleEscolar.Domain.Validations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +17,6 @@ namespace Projeto.ControleEscolar.Domain.Entities
         public DateTime DataPagamento { get; set; }
         public FormaPagamentoTypes FormaPagamento { get; set; }
         public Aluno? Aluno { get; set; }
+        public ValidationResult Validate => new MensalidadeValidation().Validate(this); 
     }
 }

@@ -37,6 +37,12 @@ namespace Projeto.ControleEscolar.API
             builder.Services.AddTransient<IDisciplinaApplicationService, DisciplinaApplicationService>();
             builder.Services.AddTransient<IDisciplinaDomainService, DisciplinaDomainService>();
 
+            builder.Services.AddTransient<IMensalidadeApplicationService, MensalidadeApplicationService>();
+            builder.Services.AddTransient<IMensalidadeDomainService, MensalidadeDomainService>();
+
+            builder.Services.AddTransient<IAvaliacaoApplicationService, AvaliacaoApplicationService>();
+            builder.Services.AddTransient<IAvaliacaoDomainService, AvaliacaoDomainService>();
+
             builder.Services.AddTransient<IAutenticacaoApplicationService, AutenticacaoApplicationService>();
             builder.Services.AddTransient<IAutenticacaoDomainService, AutenticacaoDomainService>();
            
